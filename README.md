@@ -2,7 +2,7 @@
 
 <img width="800" height="450" alt="plane-radar" src="https://github.com/user-attachments/assets/716d0992-dab8-47ba-8f1a-2aec7f607419" />
 
-**3D printed case (STL + assembly):** [MakerWorld — Waveshare ESP32-S3 1.28″](https://makerworld.com/en/models/2913572-esp32-s3-1-28-waveshare-plane-radar#profileId-3258909) · **Firmware:** [Releases](../../releases)
+**3D printed case (STL + assembly):** [MakerWorld — Waveshare ESP32-S3 1.28″](https://makerworld.com/en/models/2913572-esp32-s3-1-28-waveshare-plane-radar#profileId-3258909)
 
 The Super Mini / non-touch case is a different print and does **not** fit this board.
 
@@ -241,7 +241,7 @@ The firmware uses two 1.75 MB application slots. After the OTA-capable partition
 1. Open `http://planeradartouch.local`
 2. Choose **Firmware update**
 3. Sign in with username `admin` and your configured OTA password
-4. Upload the release file ending in **`-ota.bin`** (or PlatformIO's `.pio/build/supermini/firmware.bin`)
+4. Upload PlatformIO's `.pio/build/supermini/firmware.bin`
 5. Keep power connected while the device writes flash and restarts
 
 The initial password is **`plane-radar`**. Change it under **Setup** before using the device on a shared network.
@@ -250,21 +250,7 @@ The initial password is **`plane-radar`**. Change it under **Setup** before usin
 
 Never upload the merged/full image to the OTA form; it contains the bootloader and partition table and is only for flashing at offset `0x0`.
 
-### CI and releases (GitHub Actions)
-
-| Workflow | When | Output |
-|----------|------|--------|
-| [Build](.github/workflows/build.yml) | Push / PR to `main` | Artifact `plane-radar-touch` (merged + split `.bin` files, ~90 days) |
-| [Release](.github/workflows/release.yml) | Git tag `v*` (e.g. `v1.0.0`) | GitHub Release `-full.bin` and `-ota.bin` assets + checksums |
-
-To ship a version users can download:
-
-```bash
-git tag v1.0.0
-git push origin v1.0.0
-```
-
-The release workflow attaches both images. Use `-full.bin` at offset `0x0` for first install/recovery and `-ota.bin` in the device's authenticated firmware page.
+There is no GitHub Release for this firmware yet. Build with PlatformIO and flash over USB (`flash.bat` or `pio run -e supermini -t upload`), then use `firmware.bin` for later OTA updates.
 
 ## Dependencies
 
