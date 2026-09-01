@@ -1,6 +1,6 @@
 # Plane Radar
 
-<img width="800" height="450" alt="plane-radar" src="https://github.com/user-attachments/assets/716d0992-dab8-47ba-8f1a-2aec7f607419" />
+[![Waveshare ESP32-S3 1.28″ Plane Radar case](https://makerworld.bblmw.com/makerworld/model/US6bdd57d9d1e2a2/design/f79cd9a7edac9528.jpeg)](https://makerworld.com/en/models/2913572-esp32-s3-1-28-waveshare-plane-radar#profileId-3258909)
 
 **3D printed case (STL + assembly):** [MakerWorld — Waveshare ESP32-S3 1.28″](https://makerworld.com/en/models/2913572-esp32-s3-1-28-waveshare-plane-radar#profileId-3258909)
 
