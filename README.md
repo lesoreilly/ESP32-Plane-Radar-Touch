@@ -2,7 +2,9 @@
 
 <img width="800" height="450" alt="plane-radar" src="https://github.com/user-attachments/assets/716d0992-dab8-47ba-8f1a-2aec7f607419" />
 
-**3D printed case (STL + assembly):** [MakerWorld](https://makerworld.com/en/models/2872376-esp32-plane-radar-live-ads-b-on-a-round-display#profileId-3207083) · **Firmware:** [Releases](../../releases)
+**3D printed case (STL + assembly):** [MakerWorld — Waveshare ESP32-S3 1.28″](https://makerworld.com/en/models/2913572-esp32-s3-1-28-waveshare-plane-radar#profileId-3258909) · **Firmware:** [Releases](../../releases)
+
+The Super Mini / non-touch case is a different print and does **not** fit this board.
 
 Firmware for the **Waveshare ESP32-S3-Touch-LCD-1.28** (GC9A01 240×240 with CST816S capacitive touch). Shows a circular **ADS-B radar** around your configured location, with flight routes, detailed aircraft models, local weather/time, browser settings, authenticated OTA updates, and a tap-to-inspect plane card.
 
